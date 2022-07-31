@@ -1,0 +1,16 @@
+:root{
+
+    /* background-color */
+    --bg-color:white;
+
+    /* main-color */
+    --main-color: rgb(0, 226, 234);
+    --main2-color: rgb(251, 101, 231) ;
+
+    /* font-color */
+    --warningfont-color: red;
+    --tooltip-color:rgb(95, 100, 255);
+    --icon-color:rgb(136, 0, 196);
+
+    /* button-color */
+}

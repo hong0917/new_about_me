@@ -1,0 +1,59 @@
+/* Profile */
+.profile { z-index: 100; width: 70%; min-width: 70%; min-height: 70vh; display: flex; flex-wrap: center; justify-content: space-around; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+/* ProfileLeft */
+.profile_left { width: 25%; min-width: 30vh; margin-right: 10px; min-height: 70vh; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between;}
+.site_header { width: 100%; height: 90%; text-align: center; background: linear-gradient(to bottom,var(--main-color),var(--main2-color)); box-shadow: 0 0 100px -5px rgb(0, 0, 0, 0.4); border-radius: 30px; }
+
+.main_menu { width: 100%; height: 8%; display: flex; align-items: center; flex-direction: row; justify-content: space-between;}
+.main_menu_social { width: 65%; height: 95%; display: flex; align-items: center; background: var(--main2-color); box-shadow: 0 0 100px -5px rgb(0, 0, 0, 0.4); border-radius: 30px; }
+.main_menu_nav { width: 33%; height: 95%; display: flex; align-items: center; background: white; box-shadow: 0 0 100px -5px rgb(0, 0, 0, 0.4); border-radius: 30px; }
+
+.header_photo{ width: 200px; height: 200px; margin: 0 auto; overflow: hidden; margin-top: 100px; border-radius: 100%; border: 3px solid white; box-shadow: 10px 10px 10px -5px rgb(0, 0, 0, 0.4);}
+.header_photo img{ width: 200px; min-height: 200px;}
+
+.header_title h2{ font-size: 2rem; font-weight: bold; color: white; margin: 10px 0; margin-top: 30px;}
+.header_title h4{ font-size: 1rem; font-weight: 400; color: white; margin: 10px 0;}
+
+.header_btn{ margin-bottom: 100px; }
+.header_btn .call_btn{ font-size: 1rem; font-weight: 600; color: white; margin: 30px auto; background-color: rgba(255, 255, 255, 0); border-radius: 10px; border: 2px solid white; padding: 10px 20px;  box-shadow: 10px 10px 10px -5px rgb(0, 0, 0, 0.4);}
+.header_btn .call_btn:hover { color: var(--main2-color); background-color: white;}
+
+.copyright { position: absolute; bottom: 5%; left: 50%; transform: translate(0, -50%); text-align: center;}
+.copyright span{ font-size: 0.5rem; color: white;}
+
+.social-links { width: 100%; margin: 0 30px; display: flex; flex-direction: row; justify-content: space-between;}
+.nav { width: 100%; margin: 0 10px; display: flex; flex-direction: row; justify-content: space-between;}
+.icon{ width: 1.4rem; height: 1.4rem;}
+
+/* ProfileRight */
+.profile_right { width: 73%; min-height: 83vh; background-color: white; box-shadow: 0 0 100px -5px rgb(0, 0, 0, 0.4); border-radius: 30px;}
+.site_content { width: 95%; height: 100%; margin: 3rem auto; overflow: hidden;}
+
+/* intro */
+.intro{height: 70vh; overflow-y: scroll; padding: 0 30px;}
+.intro_content{width: 100%; display: flex; flex-direction: column;}
+
+.content{display: flex; justify-content: space-between; margin-top: 30px;}
+.content_left{ width: 60%; margin-top: 20px;}
+.content_right{ width: 35%; margin-top: 20px;}
+
+.content_right li{ margin-bottom: 15px;}
+.info_title{ color: var(--icon-color); font-weight: bold;}
+.info_content{ margin-left: 15px;}
+
+.skill{ margin-top: 20px;}
+
+/* portpolio */
+.portpolio{height: 70vh; overflow-y: scroll; padding: 0 30px;}
+
+.list{margin-top: 50px;}
+.list ul li{height: 80px; display: block; position: relative;}
+.list ul li:hover{background-color: rgba(0, 0, 0, 0.103); color: black !important;}
+.list ul li:hover::after{position: absolute; top: 30%; right: 30px; content: " "; height: 30px;  width: 30px; background-repeat: no-repeat;  background-image: url("../img/page.png");  background-size: 30px 30px;}
+.list ul li:hover .item_title,.list ul li:hover .item_date{color: black !important;}
+
+.list .item{padding: 20px;}
+
+/* portItem */
+.portItem{position: absolute; z-index: 1000; top: 0; left: 0; padding: 30px; width: 100%; height: 76vh; background-color: white; border-radius: 30px; box-shadow: inset 0px 0px 30px 30px rgba(237, 205, 163, 0.8);}

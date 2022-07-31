@@ -1,30 +1,49 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="bg">
+    <!-- 별똥별 배경 -->
+    <div class="star comet">
+    </div>
+
+    <!-- 메인 화면 -->
+    <transition name="fade">
+      <div class="profile" v-show="showView">
+        <ProfileLeft/>
+        <ProfileRight/>
+      </div>
+    </transition>
+    
+    <!-- copyright -->
+    <transition name="fade">
+      <div class="copyright" v-show="showView">
+        <span>© 2022 All rights reserved.</span>
+      </div>
+    </transition>
+    
   </div>
-  <router-view/>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import ProfileLeft from './view/ProfileLeft.vue'
+import ProfileRight from './view/ProfileRight.vue'
 
-#nav {
-  padding: 30px;
+export default {
+  name: 'App',
+  components: {
+    ProfileRight,
+    ProfileLeft
+  },
+  data(){
+    return{
+      showView:false
+    }
+  },
+  mounted(){
+    setTimeout(this.changeView,500)
+  },
+  methods:{
+    changeView(){
+        this.showView = !this.showView
+    },
+  }
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
