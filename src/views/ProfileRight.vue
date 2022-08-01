@@ -13,9 +13,13 @@
 <script>
 import Intro from '../components/Intro.vue'
 import Portpolio from '../components/Portpolio.vue' 
+import { mapGetters } from "vuex"
 
 export default {
   name: 'ProfileRight',
+  computed:{
+    ...mapGetters([getViews])
+  },
   data(){
     return{
       showView:{

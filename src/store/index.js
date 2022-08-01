@@ -183,6 +183,35 @@ export default createStore({
   },
   actions: {
   },
+  getters: {
+    getHeaderData(state){
+      return state.headerData;
+    },
+    getSocialLink(state){
+      return state.socialLink;
+    },
+    getPolioItems(state){
+      return state.portPolioItems;
+    },
+    getIntroMyself(state){
+      return state.introMyself;
+    },
+    getMyInfo(state){
+      return state.myInfo;
+    },
+    getExperience(state){
+      return state.experience;
+    },
+    getMySkills(state){
+      return state.mySkills;
+    },
+    getCertificates(state){
+      return state.certificates;
+    },
+    getViews(state){
+      return state.showView;
+    },
+  },
   modules: {
   }
 })
